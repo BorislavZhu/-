@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="GBK">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>精美的网页</title>
+    <style>
+        /* 重置默认样式 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 1rem;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ddd;
+        }
+
+        .hero {
+            background-image: url('https://picsum.photos/1600/800');
+            background-size: cover;
+            background-position: center;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero button {
+            padding: 0.8rem 2rem;
+            font-size: 1rem;
+            background-color: #007BFF;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .hero button:hover {
+            background-color: #0056b3;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            padding: 2rem;
+        }
+
+        .feature {
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .feature:hover {
+            transform: translateY(-10px);
+        }
+
+        .feature i {
+            font-size: 3rem;
+            color: #007BFF;
+            margin-bottom: 1rem;
+        }
+
+        .feature h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .testimonials {
+            background-color: #ddd;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .testimonial {
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 5px;
+            margin-bottom: 1rem;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .testimonial p {
+            font-style: italic;
+        }
+
+        .testimonial.author {
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>My Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <h1>Welcome to Our Website</h1>
+        <p>We offer amazing services to make your life easier.</p>
+        <button>Learn More</button>
+    </section>
+    <section class="features">
+        <div class="feature">
+            <i class="fas fa-rocket"></i>
+            <h2>Fast Service</h2>
+            <p>We provide fast and reliable service to our customers.</p>
+        </div>
+        <div class="feature">
+            <i class="fas fa-users"></i>
+            <h2>Great Support</h2>
+            <p>Our support team is always ready to help you.</p>
+        </div>
+        <div class="feature">
+            <i class="fas fa-check-circle"></i>
+            <h2>Quality Guaranteed</h2>
+            <p>We guarantee the quality of our services.</p>
+        </div>
+    </section>
+    <section class="testimonials">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonial">
+            <p>"I love this website, it's amazing!"</p>
+            <p class="author">- John Doe</p>
+        </div>
+        <div class="testimonial">
+            <p>"Great service, highly recommended."</p>
+            <p class="author">- Jane Smith</p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 My Website. All rights reserved.</p>
+    </footer>
+    <script src="https://kit.fontawesome.com/a01b7a357e1.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
